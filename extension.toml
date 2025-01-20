@@ -1,7 +1,7 @@
 id = "cspell"
 name = "CSpell"
 description = "CSpell Language Server for Zed editor"
-version = "0.0.1"
+version = "0.0.2"
 schema_version = 1
 authors = ["mantou132 <709922234@qq.com>"]
 repository = "https://github.com/mantou132/zed-cspell"
@@ -84,6 +84,7 @@ languages = [
   "TypeScript",
   "Uiua",
   "Vue",
+  "Vue.js",
   "WIT",
   "XML",
   "YAML",
