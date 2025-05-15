@@ -78,6 +78,8 @@ impl zed::Extension for CSpellExtension {
                     .to_string_lossy()
                     .to_string(),
                 "--stdio".to_string(),
+                "--dictionary".to_string(),
+                "~/.cspell-custom-words.txt".to_string(),
             ],
             env: Default::default(),
         })
