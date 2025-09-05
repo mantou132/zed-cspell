@@ -83,6 +83,7 @@ languages = [
   "TOML",
   "TSX",
   "TypeScript",
+  "Typst",
   "Uiua",
   "Vue",
   "Vue.js",
