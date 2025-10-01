@@ -3,8 +3,8 @@ use std::{env, fs};
 use zed::settings::LspSettings;
 use zed_extension_api::{self as zed, LanguageServerId, Result};
 
-const NPM_PKG_NAME: &str = "@vlabo/cspell-lsp";
-const LS_BIN_PATH: &str = "node_modules/@vlabo/cspell-lsp/dist/cspell-lsp.js";
+const NPM_PKG_NAME: &str = "cspell-lsp";
+const LS_BIN_PATH: &str = "node_modules/cspell-lsp/dist/bundle.mjs";
 
 #[derive(Default)]
 struct CSpellExtension {
@@ -78,6 +78,8 @@ impl zed::Extension for CSpellExtension {
                     .to_string_lossy()
                     .to_string(),
                 "--stdio".to_string(),
+                "--dictionary".to_string(),
+                "~/.cspell-custom-words.txt".to_string(),
             ],
             env: Default::default(),
         })
