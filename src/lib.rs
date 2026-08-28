@@ -77,6 +77,7 @@ impl zed::Extension for CSpellExtension {
                     .join(server_path)
                     .to_string_lossy()
                     .to_string(),
+                "--sortWords".to_string(),
                 "--stdio".to_string(),
             ],
             env: Default::default(),
